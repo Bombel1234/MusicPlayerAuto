@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MP3 Плеер с SVG-иконками</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+    <h2>MP3 Плеер</h2>
+
+    <audio id="player"></audio>
+
+    <div id="controls">
+        <button id="prev" title="Предыдущий">
+            <i class="fa-solid fa-backward fa-2x"></i>
+        </button>
+        <button id="startPause" title="Старт / Пауза">
+            <svg id="playIcon" viewBox="0 0 24 24">
+                <path d="M3 2 L21 12 L3 22 Z" />
+            </svg>
+            <svg id="pauseIcon" viewBox="0 0 24 24" style="display:none">
+                <rect x="6" y="5" width="4" height="14" />
+                <rect x="14" y="5" width="4" height="14" />
+            </svg>
+           
+        </button>
+        <button id="next" title="Следующий">
+             <i class="fa-solid fa-forward fa-2x"></i>
+        </button>
+    </div>
+
+    <div id="current">Текущий трек: -</div>
+
+    <div id="progress-container">
+        <div id="progress"></div>
+    </div>
+    <div id="time">00:00 / 00:00</div>
+
+    <ul id="playlist"></ul>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
