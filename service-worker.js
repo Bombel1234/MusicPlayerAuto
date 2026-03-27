@@ -1,13 +1,13 @@
 const CACHE_NAME = "player-cache-v1";
 
 const FILES = [
-  "/MusicPlayer/Auto/",
-  "/MusicPlayer/Auto/index.html",
-  "/MusicPlayer/Auto/style/style.css",
-  "/MusicPlayer/Auto/js/main.js",
-  "/MusicPlayer/Auto/audio/D-Bomb - O Ela, Ela (Official video).mp3",
-  "/MusicPlayer/Auto/audio/Dr.Alban - It's My Life (Official HD Video).mp3",
-  "/MusicPlayer/Auto/audio/Ice MC - It's a Rainy Day [Official Video].mp3"
+  "/MusicPlayerAuto/",
+  "/MusicPlayerAuto/index.html",
+  "/MusicPlayerAuto/style/style.css",
+  "/MusicPlayerAuto/js/main.js",
+  "/MusicPlayerAuto/audio/D-Bomb - O Ela, Ela (Official video).mp3",
+  "/MusicPlayerAuto/audio/Dr.Alban - It's My Life (Official HD Video).mp3",
+  "/MusicPlayerAuto/audio/Ice MC - It's a Rainy Day [Official Video].mp3"
 ];
 
 // self.addEventListener("install", e => {
