@@ -10,42 +10,47 @@
 </head>
 
 <body>
+    <div class="wrapper">
+        <div class="box">
+            <h2>MP3 Плеер</h2>
 
-    <h2>MP3 Плеер</h2>
+            <audio id="player"></audio>
 
-    <audio id="player"></audio>
+            <div id="controls">
+                <button id="prev" title="Предыдущий">
+                    <i class="fa-solid fa-backward fa-2x"></i>
+                </button>
+                <button id="startPause" title="Старт / Пауза">
+                    <i class="fa-solid fa-play fa-2x" id="playIcon" aria-hidden="true"></i>
+                    <i class="fa-solid fa-pause fa-2x" id="pauseIcon" aria-hidden="true"></i>
+                </button>
+                <button id="next" title="Следующий">
+                    <i class="fa-solid fa-forward fa-2x"></i>
+                </button>
+            </div>
 
-    <div id="controls">
-        <button id="prev" title="Предыдущий">
-            <i class="fa-solid fa-backward fa-2x"></i>
-        </button>
-        <button id="startPause" title="Старт / Пауза">
-            <i class="fa-solid fa-play fa-2x" id="playIcon" aria-hidden="true"></i>
-            <i class="fa-solid fa-pause fa-2x" id="pauseIcon" aria-hidden="true"></i>
-        </button>
-        <button id="next" title="Следующий">
-             <i class="fa-solid fa-forward fa-2x"></i>
-        </button>
+            <div id="current">Текущий трек: -</div>
+
+            <div id="progress-container">
+                <div id="progress"></div>
+            </div>
+            <div id="time">00:00 / 00:00</div>
+
+            <ul id="playlist"></ul>
+        </div>
     </div>
 
-    <div id="current">Текущий трек: -</div>
 
-    <div id="progress-container">
-        <div id="progress"></div>
-    </div>
-    <div id="time">00:00 / 00:00</div>
 
-    <ul id="playlist"></ul>
-
-    <script src="js/main.js"></script>
 
 </body>
+<script src="js/main.js"></script>
 <script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("service-worker.js")
-    .then(() => console.log("SW registered"))
-    .catch(err => console.error("SW error:", err));
-}
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service-worker.js")
+            .then(() => console.log("SW registered"))
+            .catch(err => console.error("SW error:", err));
+    }
 </script>
 
 </html>

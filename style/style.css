@@ -3,6 +3,14 @@ body {
     font-family: Arial, sans-serif; 
     padding: 20px; 
 }
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+.box{
+    width: 390px;
+    margin: auto;
+}
 
 #playlist li { 
     cursor: pointer; 
